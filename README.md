@@ -1,15 +1,16 @@
-# shiny-app-droplet
-How to deploy any Shiny app using Digital Ocean Droplets instances
-
 # Shiny Web App Deployment on DigitalOcean using a Droplet
 
 This guide explains the step-by-step process I followed to set up and publish a Shiny web application on a DigitalOcean Droplet using Ubuntu. It covers the installation of R, Shiny, the required Python virtual environment, and the configuration of the Shiny Server to host the web app.
 
 ## Prerequisites
 
-- A DigitalOcean Droplet running Ubuntu.
-- SSH access to the Droplet.
-- WinSCP or similar tool for file transfer (optional).
+- A [DigitalOcean](https://www.digitalocean.com/) Droplet running Ubuntu. Some suggestions:
+  - A basic instance with 1 CPU and 1GB-2GB RAM is worth 6$-10$/month, enough to handle the setup of the development environment and shiny server
+  - DigitalOcean offers Droplets intances, cheap virtual machines that can be used to host simple applications
+  - the right sizing of Droplet instance depends on the amount of resources you expect from your deployed web application
+  - Choose Ubuntu 22.04 or 20.04 (Long Term Support version) for longer support and broader community documentation compared to other Linux distros
+- SSH access to the Droplet (DigitalOcean has an embedded command line interface)
+- [WinSCP](https://winscp.net/eng/download.php) or similar tool for file transfer (optional).
 
 ## Steps
 
